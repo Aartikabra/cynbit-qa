@@ -1,0 +1,53 @@
+# Live QA Audit - www.cynbit.in
+Tester: Aarti Kabra
+Date: 2 Nov 2026, Time: Evening
+Tested On: Laptop + Mobile (Chrome)
+
+## Live Status
+I opened www.cynbit.in live. All main functions are working.
+
+- Navigation working
+- Contact form working (validation is there)
+- Mobile menu working
+- All pages loading
+
+
+So no critical functional bug found. Which is good, means dev team already fixed major issues.
+
+## Then What I Tested as QA?
+
+Since functional is OK, I checked as a real user what can be better.
+
+### 1. Performance - I felt:
+Home page thoda heavy hai, first load me 2-3 sec laga. Images ka size bada lag raha hai. If we use WebP and lazy load, it will be faster on mobile data.
+
+### 2. Usability - As a user I noticed:
+- After submitting contact form, the success message disappears very fast. User might miss it. Should stay for 5 sec.
+- No scroll to top button. Blog is long, user has to scroll manually up.
+- Active page is not highlighted in menu, so I forgot which page I was on.
+
+### 3. Accessibility - Small issues:
+- Some light grey text is a bit hard to read.
+- Images in blog have no alt text (checked via inspect)
+
+### 4. SEO / Minor:
+- Title tags are same on few pages. Should be unique.
+- No sitemap.xml visible.
+
+## My Priority Suggestion
+
+**Should fix now (P1):**
+1. Image compression + lazy loading
+2. Make form success message sticky
+3. Add active menu highlight
+4. Add scroll to top button
+
+**Good to have (P2):**
+5. Alt text for all images
+6. Check contrast ratio
+7. Add Cypress test for contact form so future break doesn't happen
+
+## Conclusion
+Website is working fine functionally. No blocker bug. Only UX polish needed to improve conversion and accessibility.
+
+Tested live by me - Aarti Kabra
